@@ -9,12 +9,12 @@
 
 int main(void)
 {
-	char str[] = "_putchar";
+	int  number[]= {95, 112, 117, 116, 99, 104, 97, 114}; 
 	int i = 0;
 
 	while (i != '\0')
 	{
-		_putchar(str[i]);
+		_putchar(number[i]);
 		i++;
 	}
 	_putchar('\n');
