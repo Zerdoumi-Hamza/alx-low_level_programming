@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*print_alphabet_x10();
+*print_alphabet_x10 - Function that print ten time the alphabets letter;
 *
-*Return: Don't return  anything, it is a print function no less no more. $
+*Return: Don't return  anything, it is a print function no less no more.
 */
 
 void print_alphabet_x10(void)
@@ -19,5 +19,6 @@ void print_alphabet_x10(void)
 			c++;
 		}
 		_putchar('\n');
+		i++;
 	}
 }
