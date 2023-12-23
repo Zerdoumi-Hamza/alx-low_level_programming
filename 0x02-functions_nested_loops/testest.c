@@ -4,7 +4,9 @@
 int main(void)
 {
 	
-	print_last_digit(98);
+//	print_last_digit(98);
+	jack_bauer();
+	
 	return 0;
 }
 
