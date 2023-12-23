@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
 /**
 * jack_bauer - a function that prints every
 * minute of the day of Jack Bauer, starting from 00:00 to 23:59.
@@ -11,7 +10,7 @@ void jack_bauer(void)
 	int j = 48;
 	int k = 48;
 	int l = 48;
-	bool a = false;
+
 	while (i <= 50)
 	{
 		j = 48;
@@ -33,22 +32,17 @@ void jack_bauer(void)
 					{
 					if ((k == 53) && (l == 57))
 					{
-						a = true;
-						break;
+						goto bara;
 					}
 					}
 					l++;
 				}
-				if (a)
-					break;	
 				k++;
 			}
-			if (a)
-				break;
 			j++;
 		}
-		if (a)
-			break;
 		i++;
 	}
+bara:
+	_putchar('\n');
 }
