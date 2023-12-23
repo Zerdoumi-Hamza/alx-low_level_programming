@@ -3,7 +3,8 @@
 
 int main(void)
 {
-	_putchar(0);
+	
+	print_last_digit(98);
 	return 0;
 }
 
