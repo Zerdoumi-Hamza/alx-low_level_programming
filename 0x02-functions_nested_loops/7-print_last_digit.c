@@ -46,6 +46,5 @@ int print_last_digit(int n)
 			_putchar(122);
 			break;
 	}
-	_putchar('\n');
 	return (x);
 }
