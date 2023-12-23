@@ -8,9 +8,10 @@ int main(void)
 	//jack_bauer();
 //	times_table();
 //	printf("%d\n",add(89,9));
-	print_to_98(98);
-	print_to_98(-6);
-	print_to_98(111);
+	//print_to_98(98);
+	print_times_table(3);
+	printf("\n");
+	print_times_table(5);
 	return 0;
 }
 
