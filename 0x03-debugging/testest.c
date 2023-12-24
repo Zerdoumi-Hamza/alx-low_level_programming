@@ -12,7 +12,7 @@ int main(void)
 //	print_times_table(3);
 //	printf("\n");
 //	print_times_table(5);
-	largest_number(972, -98, 0);
+	printf("%d is the largest number\n", largest_number(972, -98, 0));
 	return 0;
 }
 
