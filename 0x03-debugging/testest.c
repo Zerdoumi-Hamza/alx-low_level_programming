@@ -9,9 +9,10 @@ int main(void)
 //	times_table();
 //	printf("%d\n",add(89,9));
 	//print_to_98(98);
-	print_times_table(3);
-	printf("\n");
-	print_times_table(5);
+//	print_times_table(3);
+//	printf("\n");
+//	print_times_table(5);
+	largest_number(972, -98, 0);
 	return 0;
 }
 
