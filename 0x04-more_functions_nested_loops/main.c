@@ -9,6 +9,11 @@ int main(void)
 /*	printf("%c: %d\n", c, _isupper(c));  */
 /*	print_numbers(); 			*/
 /*	print_most_numbers();			*/
-	more_numbers();
+/*	more_numbers();				*/
+	print_line(6);
+	print_line(10);
+	print_line(15);
+	print_line(20);
+	print_line(0);
 	return (0);
 }
