@@ -7,7 +7,8 @@ int main(void)
 	c = 'A'; 
 	
 /*	printf("%c: %d\n", c, _isupper(c));  */
-/*	print_numbers(); */
-	print_most_numbers();
+/*	print_numbers(); 			*/
+/*	print_most_numbers();			*/
+	more_numbers();
 	return (0);
 }
