@@ -24,8 +24,13 @@ int main(void)
 	print_diagonal(10);
 	print_diagonal(-4);
 */
+/*
 	print_square(0);
 	print_square(5);
 	print_square(-5);
+*/
+	print_triangle(0);
+	print_triangle(5);
+	print_triangle(-5);
 	return (0);
 }
