@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* _isupper - cheeck if the character is lower or not
+*_isupper - cheeck if the character is lower or not
 *@c: character to be cheeck it.
-* Return: 1 if charactere is lowercase 0 otherwise
+*Return: 1 if charactere is lowercase 0 otherwise
 */
 
 int _isupper(int c)

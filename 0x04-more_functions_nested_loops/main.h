@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 int _isupper(int c);
-#fidef /* HEADER_FILE*/
+t _isdigit(int c);
+#endif /* HEADER_FILE*/
 
 
