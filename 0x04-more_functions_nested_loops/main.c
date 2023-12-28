@@ -29,8 +29,17 @@ int main(void)
 	print_square(5);
 	print_square(-5);
 */
+/*
 	print_triangle(0);
 	print_triangle(5);
 	print_triangle(-5);
+*/
+	print_number(1024);
+	print_number(432);
+	print_number(89);
+	print_number(-23);
+	print_number(4);
+	print_number(1029838);
+
 	return (0);
 }
