@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
 *main - Entry part
@@ -10,10 +10,10 @@ int main(void)
 {
 	long int n  = 612852475143;
 	int i;
-	
+
 	while (n != 1)
 	{
-		for ( i = 2; n <= n; i++)
+		for (i = 2; n <= n; i++)
 		{
 			if (n % i == 0)
 			{
@@ -22,7 +22,6 @@ int main(void)
 			}
 		}
 	}
-	printf("%d",i);
-	printf("\n");
+	printf("%d\n", i);
 	return (0);
 }
