@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	while(s[i])
+	while (s[i])
 	{
 		i++;
 	}
@@ -29,7 +29,7 @@ void print_rev(char *s)
 	int lengh;
 
 	lengh = _strlen(s);
-	while(s[lengh])
+	while (s[lengh])
 	{
 		_putchar(s[lengh]);
 		lengh--;
