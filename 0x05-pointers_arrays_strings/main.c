@@ -6,50 +6,36 @@
 *
 *Return: Always 0.
 */
+void _puts(char *str)
+{
+        int i = 0;
+        while(str[i])
+        {
+                _putchar(str[i]);
+                i++;
+        }
+	_putchar('\n');
+}
+
 
 int _strlen(char *s)
 {
 	int i=0;
-
-	while(*s)
+	while(s[i])
 	{
-		*(s++);
 		i++;
 	}
 	return (i);
 }
 
-void _puts(char *str)
-{
-	char x;
-	while(*str)
-	{
-		x = *(str++);
-		if (x >= 65 && x <= 90)
-		{ 
-			_putchar(x + 'A');
-		}
-		else if (x >= 97 && x <= 122)
-		{
-			_putchar(x + 'a');
-		}
-		else
-		{
-			_putchar(x);
-		}
-		*(str++);
-	}
-	_putchar('\n');
-}
 int main(void)
 {
 	int a = 10;
 	int b = 5;
-	char *str;
 	int longueur; 
+	char *str;
 	
-	str = "Hello_world";
-
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 	_puts(str);
 	longueur = _strlen(str);	
 	printf("the lengh of the str is:%d \n", longueur);
