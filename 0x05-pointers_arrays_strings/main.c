@@ -16,7 +16,7 @@ int _strlen(char *s)
 		*(s++);
 		i++;
 	}
-	return (1);
+	return (i);
 }
 
 void _puts(char *str)
@@ -46,11 +46,13 @@ int main(void)
 	int a = 10;
 	int b = 5;
 	char *str;
+	int longueur; 
 	
 	str = "Hello_world";
 
 	_puts(str);
-//	_strlen(str);	
+	longueur = _strlen(str);	
+	printf("the lengh of the str is:%d \n", longueur);
 /**
 	printf("str contain %p\n", str);
 	printf(" Hello mean in Islame %s", Hello); 
