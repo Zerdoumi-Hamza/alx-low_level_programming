@@ -7,7 +7,56 @@
 *Return: Always 0.
 */
 
-/* ######################################"  */ 
+/* ##############################"" Dispaly fucntion ################  */
+void Display(int Tab[], int size)
+{
+	int i = 0;
+
+	while (i <= size)
+	{
+		printf("%d\t", Tab[i]);
+		i++;
+	}
+	printf("\n");
+}
+
+/* #################################  My function ###########  */
+void funciton(int *table, int size)
+{
+	int i;
+
+	i = 0;
+//	printf("The address of first element in table is %x\n", table);
+//	printf("The address of first elemnet in tables &table[0] is %x\n", &table[0]);
+	while (i <= size)
+	{	
+		table[i] = (*(table +i))*2;
+		i++;
+	}
+}
+		
+/* #######################################  */
+void rev_string(char *s)
+{
+        int i, lengh;
+        char V;
+
+        i = 0;
+        lengh = _strlen(s);
+	printf("The lengh is %d\n", lengh);
+        while (lengh)
+        {
+                V = s[i];
+                s[i] = s[lengh];
+                s[lengh] = V;
+                i++;
+                lengh--;
+		printf(" *****The Actual char in s is %d ****\n", s[i]);
+		printf("The lengh from inside the while loop is %d\n", lengh);
+        }
+}
+/* #####################################   */
+
 int _strlen(char *s)
 {
 	int i=0;
@@ -53,8 +102,20 @@ int main(void)
 	int b = 5;
 	int longueur; 
 	char *str;
-	
+	char s[10] = "My school";
+	int Tab[] = {1,2,3,4,5};
+	int size;
+
+	size = _strlen(Tab);
 	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+			
+	printf("##############  %s ###############\n", s);
+	rev_string(s);
+	printf("##############  %s ###############\n", s);
+	printf("*************  Before ************\n");
+	Display(Tab, size);
+	printf("*************  After ************\n")
+	
 	_puts(str);
 	print_rev(str);
 	longueur = _strlen(str);	
