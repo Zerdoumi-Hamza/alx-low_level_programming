@@ -9,7 +9,7 @@
 int _strlen(char *s)
 {
 	int i;
-	
+
 	i = 0;
 	while (s[i])
 	{
@@ -29,9 +29,9 @@ void puts2(char *str)
 	int lengh, i;
 
 	lengh = _strlen(str);
-	for ( i = 0; i <= lengh; i=i+2)
+	for (i = 0; i <= lengh; i = i + 2)
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
-}	
+}
