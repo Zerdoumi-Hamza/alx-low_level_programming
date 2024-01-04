@@ -43,7 +43,7 @@ void rev_string(char *s)
 
         i = 0;
         lengh = _strlen(s);
-	printf("The lengh is %d\n", lengh);
+//	printf("The lengh is %d\n", lengh);
         while (lengh)
         {
                 V = s[i];
@@ -51,8 +51,8 @@ void rev_string(char *s)
                 s[lengh] = V;
                 i++;
                 lengh--;
-		printf(" *****The Actual char in s is %d ****\n", s[i]);
-		printf("The lengh from inside the while loop is %d\n", lengh);
+//		printf(" *****The Actual char in s is %d ****\n", s[i]);
+//		printf("The lengh from inside the while loop is %d\n", lengh);
         }
 }
 /* #####################################   */
@@ -63,9 +63,12 @@ int _strlen(char *s)
 
 	while(s[i])
 	{
+		printf(" =========================\n");
+		_putchar(s[i]);
+		printf("\n ======================= \n");
 		i++;
 	}
-	return (i - 1);
+	return (i);
 }
 
 
@@ -106,18 +109,21 @@ int main(void)
 	int Tab[] = {1,2,3,4,5};
 	int size;
 
-	size = _strlen(Tab);
+//	size = _strlen(Tab);
 	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 			
+	str = "Holberton!";
+	longueur = _strlen(str);
+	printf("The lengh of str Holberton is %d\n", longueur);
 	printf("##############  %s ###############\n", s);
 	rev_string(s);
 	printf("##############  %s ###############\n", s);
 	printf("*************  Before ************\n");
 	Display(Tab, size);
-	printf("*************  After ************\n")
+	printf("*************  After ************\n");
 	
-	_puts(str);
-	print_rev(str);
+//	_puts(str);
+//	print_rev(str);
 	longueur = _strlen(str);	
 	printf("the lengh of the str is:%d \n", longueur);
 /**
