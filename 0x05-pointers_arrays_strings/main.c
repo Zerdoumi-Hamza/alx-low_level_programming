@@ -6,6 +6,18 @@
 *
 *Return: Always 0.
 */
+/* ################################  copy string inside another */
+char *_strcpy(char *dest, char *src)
+{
+        int i = 0;
+
+        while (*src)
+        {
+                *(dest + i) = *(src + i);
+                i++;
+        }
+        return (dest);
+}
 
 /* ##############################"" Dispaly fucntion ################  */
 void Display(int Tab[], int size)
@@ -108,6 +120,12 @@ int main(void)
 	char s[10] = "My school";
 	int Tab[] = {1,2,3,4,5};
 	int size;
+	char *ptr;
+	char string[98];
+	
+	ptr = _strcpy(string, "First, solve the problem. Then, write the code\n");
+	printf("%s", string);
+	printf("%s", ptr);
 
 //	size = _strlen(Tab);
 	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
