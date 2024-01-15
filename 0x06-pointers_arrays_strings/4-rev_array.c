@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 *reverse_array - function print the array from /
 * the last element to the first one.
@@ -20,6 +20,4 @@ void reverse_array(int *a, int n)
 		a[nn - i] = k;
 		i++;
 	}
-	return (0);
 }
-
