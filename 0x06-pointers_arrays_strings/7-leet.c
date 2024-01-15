@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 *leet - function that encode a strinfg into 1337
 *@s: String
