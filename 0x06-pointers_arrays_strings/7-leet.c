@@ -23,6 +23,5 @@ char *leet(char *s)
 		}
 		i++;
 	}
-	printf("\n");
 	return (s);
 }
