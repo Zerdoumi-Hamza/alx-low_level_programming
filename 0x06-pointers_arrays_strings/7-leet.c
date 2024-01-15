@@ -8,8 +8,7 @@
 char *leet(char *s)
 {
 	int i = 0, j;
-	char upper_[] = "AEOTL";
-	char lower_[] = "aeotl";
+	char upper_lower[] = "AEOTLaeotl";
 	int number[] = {52, 51, 48, 55, 49};
 
 	while (s[i] != '\0')
@@ -18,9 +17,8 @@ char *leet(char *s)
 		j = 0;
 		while (upper_[j] != '\0')
 		{
-			if (s[i] == upper_[j] || s[i] == lower_[j])
+			if (s[i] == upper_lower[j])
 				s[i] = number[j];
-			printf("the char of upper_[%d] is %c\n", j, upper_[j]);
 			j++;
 		}
 		i++;
