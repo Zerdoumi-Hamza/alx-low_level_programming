@@ -9,7 +9,7 @@ char *leet(char *s)
 {
 	int i = 0, j;
 	char upper_lower[] = "AEOTLaeotl";
-	int number[] = {52, 51, 48, 55, 49};
+	int number[] = {52, 51, 48, 55, 49, 52, 51, 48, 55, 49};
 
 	while (s[i] != '\0')
 	{
