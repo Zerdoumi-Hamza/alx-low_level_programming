@@ -9,7 +9,7 @@
 char *cap_string(char *s)
 {
 	int cap [] = {32, 33, 34, 40, 41, 44, 46, 123, 125};
-	 int i = 0, j;
+	 int i = 0, j = 0;
 	while (s[i] != '\0')
 	{
 		/*for (j = 0; j < sizeof(cap) / sizeof(int); j++)*/
