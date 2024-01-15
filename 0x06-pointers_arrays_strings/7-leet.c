@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		/*for (j = 0; j <= sizeof(number) / sizeof(int); j++)*/
 		j = 0;
-		while (upper_[j] != '\0')
+		while (upper_lower[j] != '\0')
 		{
 			if (s[i] == upper_lower[j])
 				s[i] = number[j];
