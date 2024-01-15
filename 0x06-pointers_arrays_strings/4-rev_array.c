@@ -1,7 +1,8 @@
-#include "main.h" 
+#include "main.h"
 
 /**
-*reverse_array - function print the array from the last element to the first one.
+*reverse_array - function print the array from /
+* the last element to the first one.
 *@a: array.
 *@n: size of array.
 *Return: It's a void function so it doesn't return anything.
@@ -18,8 +19,7 @@ void reverse_array(int *a, int n)
 		a[i] = a[nn - i];
 		a[nn - i] = k;
 		i++;
-	} 
-}
+	}
 	return (0);
 }
 
