@@ -12,13 +12,15 @@ char *cap_string(char *s)
 	 int i = 0, j;
 	while (s[i] != '\0')
 	{
-		for (j = 0; j < sizeof(cap) / sizeof(int); j++)
+		/*for (j = 0; j < sizeof(cap) / sizeof(int); j++)*/
+		while (cap[j] != '\0')
 		{
 			if (((int)s[i] == cap[j]) ||  (s[i] == '\n' || s[i] == '\t'))
 			{
 				if ((int)s[i + 1] >= 97 && (int)s[i + 1] <= 122)
 					s[i + 1] = (char)((int)s[i + 1] - 32);
 			}
+			j++;
 		}
 		i++;
 	}
