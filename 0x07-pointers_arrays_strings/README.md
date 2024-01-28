@@ -1,1 +1,3 @@
-					==More pointer to pointer and 2D array==
+Pointers_arrays_strings.
+
+
