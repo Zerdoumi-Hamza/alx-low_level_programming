@@ -1,0 +1,6 @@
+#ifndef	Main_h1
+#define	Main_h1 
+
+int _putchar(char c);
+
+#endif  /* Header*/
