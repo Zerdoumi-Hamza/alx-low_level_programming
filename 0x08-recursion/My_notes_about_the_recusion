@@ -1,0 +1,29 @@
+#include <stdio.h>
+/*#include "main.h"*/
+/*    #include "_putchar.c"	*/
+/*
+*_print_rev_recursion -  Recursive function that print the string.
+*@s: the string suposed to sent to the function.
+*Return: Nothing.
+*/
+
+
+int size_s(char *s)
+{
+	
+	if (s[0] != '\0')
+	{
+		size_s(s+1);
+		int count = 0;
+		count++;
+	}	
+	return (count);
+}
+
+int main(void)
+{
+	char c[] = "Colten Walter";
+	int len = size_s(c);
+	printf("The size of string %s is %d\n", c,len);
+	return (0);
+}
